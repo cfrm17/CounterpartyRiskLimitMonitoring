@@ -6,7 +6,7 @@ The key difference between monitoring for reporting versus monitoring for limits
 
 The groups of trades that are to be monitored are created by applying filters to the bank-wide set of trades. Each filtered set of trades is referred to as an Aggregation Set. Each Aggregation Set has a specific number of possible ‘Dimensions’ to which it must be possible to map each trade. 
 
-Any trade that matches all dimension values (see https://finpricing.com/lib/EqCallable.html) for an Aggregation Set belongs to the set. For monitoring and reporting, each Aggregation Set is associated with one or more Aggregation Risk Metrics for which its value (including exposure term profile) can be calculated. As stated above, this pairing is referred to as an Exposure Definition.
+Any trade that matches all dimension values for an Aggregation Set belongs to the set. For monitoring and reporting, each Aggregation Set is associated with one or more Aggregation Risk Metrics for which its value (including exposure term profile) can be calculated. As stated above, this pairing is referred to as an Exposure Definition.
 
 There are various prescribed combinations of dimensions to be monitored, and each different combination is referred to as an Aggregation Set Type. Each actual Aggregation Set will be of an Aggregation Set Type. In this and other sections of this document the rules for monitoring activities are described in reference to these Aggregation Set Types. 
 
@@ -21,3 +21,9 @@ As stated, Aggregation Sets define criteria for trade membership for the Exposur
 It is assumed that every trade will be either directly or indirectly mappable to all Aggregation Set Dimensions. However it should be noted the Aggregation Set trade membership rules are sometimes specific to the kind of Aggregation Set (the Aggregation Set Type) along with the Risk Metric that is linked to the Aggregation Set. 
 
 For example, when calculating the replacement risk against the issuer for an underlying AFS or Banking Book bond for a Credit Default Swap, or the replacement risk arising from an outright position on an AFS or Banking Book Bond, the Bond’s Issuer should be mapped to the Aggregation Set’s Customer. Whereas for the counterparty risk associated with the same Credit Default Swap, the trade’s legal Counterparty should be mapped to the Aggregation Set’s Customer. The rules for determining aggregation set trade membership are summarised in the requirements below and covered more definitively. 
+
+
+Reference:
+
+https://finpricing.com/knowledge.html
+
