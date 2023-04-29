@@ -25,5 +25,5 @@ For example, when calculating the replacement risk against the issuer for an und
 
 Reference:
 
-https://finpricing.com/knowledge.html
+https://finpricing.com/FinPricing-ProductBrochure.pdf
 
